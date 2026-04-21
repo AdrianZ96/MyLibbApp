@@ -1,0 +1,10 @@
+.booksMarquee {
+  width: 100%;
+}
+
+.marqueeContent {
+  display: flex;
+  flex-direction: column; /* To jest klucz! Układa książki pionowo */
+  gap: 15px; /* Odstęp między książkami */
+  width: 100%;
+}

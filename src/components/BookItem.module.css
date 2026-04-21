@@ -1,0 +1,129 @@
+.bookCard {
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bookCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bookMain {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.bookCover {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.bookInfo {
+  flex-grow: 1;
+}
+
+.bookInfo h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.bookInfo p {
+  color: var(--text-light);
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+
+.bookActions {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.btnAction {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  
+  
+  width: 40px;          /* Stała szerokość */
+  height: 40px;         /* Stała wysokość */
+  display: flex;        /* Wymusza centrowanie ikony w środku */
+  align-items: center;
+  justify-content: center;
+  
+  
+  padding: 0;           
+  
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text-light);
+}
+
+.btnAction:hover {
+  background: var(--bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.categoryBadge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--bg);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.bookDetails {
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: #fdfdfd;
+  padding: 10px;
+  border-radius: 8px;
+  
+  /* Płynne przejście */
+  max-height: 500px; /* Ustaw jakąś rozsądną wysokość */
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Opcjonalnie: jeśli chcesz, żeby przy zamknięciu znikało płynnie */
+.bookDetails[hidden] {
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+}
+.editArea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical; /* Pozwala użytkownikowi zmienić rozmiar pola */
+  display: block;
+}
+.isRead {
+  border-left: 5px solid #2a9d8f; /* Zielony pasek dla przeczytanych */
+  background: #f8f9fa; /* Lekko zmienione tło */
+}

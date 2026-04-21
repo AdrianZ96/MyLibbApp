@@ -1,0 +1,72 @@
+.homeDashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcomeHero {
+  margin-bottom: 40px;
+}
+
+.welcomeHero h1 {
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+.welcomeHero p {
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: var(--white);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.statCard:hover {
+  transform: scale(1.02);
+  border-color: var(--accent);
+}
+
+.statCard h3 {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+.statRead {
+  /* Dodatkowe style dla przeczytanych, jeśli chcesz je wyróżnić */
+}
+
+.featuredFavorite {
+  background: var(--accent-light);
+  padding: 30px;
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.featuredContent {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.featuredContent img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
