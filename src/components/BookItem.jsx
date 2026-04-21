@@ -15,7 +15,7 @@ const BookItem = ({ book, onDelete, onToggleFavorite, onUpdate }) => {
     <div className={`${styles.bookCard} ${book.progress === 'fulfilled' ? styles.isRead : ''}`}>
       <div className={styles.bookMain}>
         <img 
-          src={book.image || '/pusta.jpg'} 
+          src={book.image || 'pusta.jpg'} 
           className={styles.bookCover} 
           alt={book.title}
         />

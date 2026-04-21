@@ -33,7 +33,7 @@ const Home = ({ books, setActiveTab }) => {
         <div className={styles.featuredFavorite}>
           <h2>Twoja Perełka</h2>
           <div className={styles.featuredContent}>
-             <img src={favoriteBook.image || '/pusta.jpg'} alt="Ulubiona" />
+             <img src={favoriteBook.image || 'pusta.jpg'} alt="Ulubiona" />
              <div>
                 <h3>{favoriteBook.title}</h3>
                 <p>To Twoja ulubiona pozycja. Może warto do niej wrócić?</p>
